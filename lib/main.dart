@@ -12,19 +12,19 @@ void main() {
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
-    home: const HomePage(),
+    home: const RegisterView(),
     debugShowCheckedModeBanner: false,
   ));
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class RegisterView extends StatefulWidget {
+  const RegisterView({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<RegisterView> createState() => _RegisterViewState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RegisterViewState extends State<RegisterView> {
   late final TextEditingController _email;
   late final TextEditingController _password;
 
